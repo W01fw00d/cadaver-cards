@@ -1,0 +1,26 @@
+{
+  "name": "js-template",
+  "version": "1.0.0",
+  "description": "WIP",
+  "main": "main.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "cypress": "^6.4.0"
+  },
+  "scripts": {
+    "f-test": "cypress run",
+    "f-test-ui": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W01fw00d/js-template.git"
+  },
+  "author": "W01fw00d",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/W01fw00d/js-template/issues"
+  },
+  "homepage": "https://github.com/W01fw00d/js-template#readme"
+}

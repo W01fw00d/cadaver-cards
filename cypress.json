@@ -1,0 +1,4 @@
+{
+  "testFiles": ["core/core1.spec.js", "extra.spec.js"],
+  "video": false
+}
