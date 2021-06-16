@@ -1,7 +1,9 @@
-import Console from "./manager/Console.js";
+import Hand from "./manager/Hand.js";
+import DragAndDrop from "./manager/DragAndDrop.js";
 
 function init() {
-  Console().log("Hello World");
+  Hand().render();
+  DragAndDrop().bind();
 }
 
 document.addEventListener("DOMContentLoaded", init);

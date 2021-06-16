@@ -13,6 +13,47 @@ body {
   height: 100vh;
 }
 
-.note {
-  color: white;
+.flex-box.main-container {
+  flex-direction: column;
+}
+
+.field {
+  padding: 10px;
+  margin-top: 150px;
+}
+
+.hand {
+  margin-top: 60px;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card.slot {
+  background-color: grey;
+  width: 120px;
+  height: 170px;
+}
+
+.card.playable {
+  background-color: brown;
+  width: 100px;
+  height: 150px;
+
+  cursor: pointer;
+}
+
+.card .img-wrapper {
+  height: 50%;
+}
+
+.card img {
+  max-width: 95%;
+  max-height: 95%;
+  padding: 2px;
+}
+
+.card .title {
+  text-align: center;
 }
