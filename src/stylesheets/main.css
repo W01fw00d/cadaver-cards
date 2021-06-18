@@ -55,6 +55,7 @@ body {
 
 .card .img-wrapper {
   height: 50%;
+  font-size: 40px;
 }
 
 .card .image {

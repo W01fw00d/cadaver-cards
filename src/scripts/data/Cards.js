@@ -20,7 +20,7 @@ export default {
     // Cadáver 5
     { title: "Dios Menor", emoji: "⛩", ink: 1, power: 1 },
     // Cadáver 6
-    { title: "Mosso", emoji: "👮🏼‍♀️", ink: 1, power: 1 },
+    { title: "Mosso", emoji: "👮🏻‍♂️", ink: 1, power: 1 },
     // Cadáver 7
     {
       title: "Cultista Terraplanista",
@@ -46,6 +46,8 @@ export default {
     // Cadáver 2
     { title: "Cyan", img: "cyan.jpg", ink: 1, power: 1 },
     { title: "Neptuna", emoji: "🧜‍♀️", ink: 1, power: 1 },
+    // Cadáver 6
+    { title: "Claudia", emoji: "👮🏼‍♀️", ink: 1, power: 1 },
     // Cadáver 8
     { title: "Farina", img: "farina.jpeg", ink: 1, power: 1 },
     // Cadáver 11
