@@ -29,7 +29,12 @@ export default {
       power: 1,
     },
     // Cadáver 8
-    { title: "Seguidora de Farina", emoji: "👩🏿", ink: 1, power: 1 },
+    {
+      title: "Seguidora de Farina",
+      img: "seguidora_farina.jpeg",
+      ink: 1,
+      power: 1,
+    },
     // Cadáver 9
     { title: "Furro", emoji: "😻", ink: 1, power: 1 },
     // Cadáver 10
@@ -46,6 +51,11 @@ export default {
     // Cadáver 11
     { title: 'Fréderic "El Eslavo"', emoji: "👨🏻", ink: 1, power: 1 },
     { title: "Maria Cristina", emoji: "🐈", ink: 1, power: 1 },
-    { title: "Juan José de Austria", emoji: "👱🏽‍♂️", ink: 1, power: 1 },
+    {
+      title: "Juan José de Austria",
+      img: "juan_jose_austria.png",
+      ink: 1,
+      power: 1,
+    },
   ],
 };
