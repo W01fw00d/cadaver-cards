@@ -44,6 +44,15 @@ body {
   cursor: pointer;
 }
 
+.card .power {
+  color: red;
+}
+
+.card .flex-box.stats {
+  justify-content: space-between;
+  padding: 5px;
+}
+
 .card .img-wrapper {
   height: 50%;
 }

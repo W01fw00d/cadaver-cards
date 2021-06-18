@@ -5,6 +5,10 @@ export default (card, index) => {
 
   return (
     `<div id="card${index}" class="card playable" draggable="true">` +
+    `<div class="stats flex-box">` +
+    `<span>${card.ink}</span>` +
+    `<span class="power">${card.power}</span>` +
+    `</div>` +
     `<div class="img-wrapper flex-box">` +
     img +
     `</div>` +
