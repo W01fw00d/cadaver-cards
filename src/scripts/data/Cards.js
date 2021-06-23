@@ -1,24 +1,24 @@
 export default {
-  ink: [
-    {
+  ink: {
+    pencil: {
       title: "Lápiz",
       emoji: "✏",
       inkCost: 0,
       inkGain: 1,
     },
-    {
+    pen: {
       title: "Boli",
       emoji: "🖊",
       inkCost: 1,
       inkGain: 2,
     },
-    {
+    quill: {
       title: "Pluma",
       emoji: "🖋",
       inkCost: 2,
       inkGain: 3,
     },
-  ],
+  },
   secondary: [
     // Cadáver 1
     {
