@@ -1,11 +1,11 @@
 import Cards from "../data/Cards.js";
 import ArrayUtils from "../utils/Array.js";
 
-export default () => {
+export default (shopDeck) => {
   const arrayUtils = ArrayUtils();
 
   const init = () => {
-    const initPlayer = (name) => {
+    const initPlayer = (selector, name) => {
       const initDeck = () => {
         function fillArray(value, len) {
           var arr = [];
@@ -16,15 +16,18 @@ export default () => {
         }
 
         const nCards = 2;
-        return [
+        const deckCardsDealt = shopDeck.splice(0, nCards);
+        //shopDeck = shopDeck.filter((el) => !deckCardsDealt.includes(el));
+
+        //const shopDeckCopy = [...shopDeck];
+        return arrayUtils.shuffle([
           ...fillArray(Cards.ink.pencil, 8),
-          ...arrayUtils
-            .shuffle(Cards.secondary)
-            .filter((_, index) => index < nCards),
-        ];
+          ...deckCardsDealt,
+        ]);
       };
 
       return {
+        selector,
         name,
         hp: 10,
         ink: 0,
@@ -32,12 +35,13 @@ export default () => {
         deck: initDeck(),
         discards: [],
         hand: [],
+        onBoard: [], //TODO: here goes the protagonists cards on play
       };
     };
 
     return {
-      a: initPlayer("Gabo"),
-      b: initPlayer("JJ"),
+      a: initPlayer("player", "Gabo"),
+      b: initPlayer("adversary", "JJ"),
     };
   };
 

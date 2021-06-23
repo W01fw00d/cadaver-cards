@@ -32,6 +32,10 @@ body {
   flex-direction: column;
 }
 
+.hand {
+  min-height: 156px;
+}
+
 .card {
   margin: 3px;
 }
