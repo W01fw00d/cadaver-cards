@@ -2,23 +2,42 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Cadaver cards</title>
+    <title>Cadáver Deck Building Game</title>
     <link rel="shortcut icon" type="image/png" href="src/images/favicon.ico" />
   </head>
 
   <body>
-    <div class="main-container flex-box">
-      <!-- TODO: add adversary writer -->
-      <!-- TODO: add adversary hand -->
-      <!-- TODO: add adversary field -->
-      <div class="field flex-box">
-        <div id="slot1" class="card slot"></div>
-        <div id="slot2" class="card slot"></div>
-        <div id="slot3" class="card slot"></div>
-        <div id="slot4" class="card slot"></div>
+    <div class="body-container flex-box">
+      <div class="writer-container flex-box">
+        <div class="writer">
+          <div>Escritor A</div>
+          <div>HP: 10</div>
+          <br />
+          <div>Tinta: 0</div>
+          <div>Ataque: 0</div>
+        </div>
+        <div class="writer">
+          <div>Escritor B</div>
+          <div>HP: 10</div>
+          <br />
+          <div>Tinta: 0</div>
+          <div>Ataque: 0</div>
+        </div>
       </div>
-      <div class="hand flex-box"></div>
-      <!-- TODO: add player writer -->
+      <div class="match-container flex-box">
+        <div class="adversary hand flex-box"></div>
+        <div class="adversary field flex-box">
+          <div id="slot1" class="card slot"></div>
+        </div>
+        <div class="player field flex-box">
+          <div id="slot1" class="card slot"></div>
+        </div>
+        <div class="player hand flex-box"></div>
+      </div>
+      <div class="turn-button-container flex-box">
+        <button type="button" class="turn-button">Terminar Turno</button>
+      </div>
+      <div class="shop flex-box"></div>
     </div>
   </body>
 

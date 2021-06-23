@@ -6,7 +6,9 @@ export default () => {
   const arrayUtils = ArrayUtils();
 
   const render = () => {
-    const dealCardsToPlayer = (handSelector) => {
+    const dealCardsToShop = () => {
+      const selector = document.querySelectorAll(".shop")[0];
+
       var parser = new DOMParser();
 
       const nCards = 4;
@@ -19,16 +21,11 @@ export default () => {
             "text/html"
           );
 
-          handSelector.appendChild(doc.firstChild);
+          selector.appendChild(doc.firstChild);
         });
     };
 
-    const playerHandSelector = document.querySelectorAll(".player.hand")[0];
-    dealCardsToPlayer(playerHandSelector);
-
-    const adversaryHandSelector =
-      document.querySelectorAll(".adversary.hand")[0];
-    dealCardsToPlayer(adversaryHandSelector);
+    dealCardsToShop();
   };
 
   return { render };

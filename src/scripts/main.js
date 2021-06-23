@@ -1,9 +1,9 @@
 import Hand from "./manager/Hand.js";
-import DragAndDrop from "./manager/DragAndDrop.js";
+import Shop from "./manager/Shop.js";
 
 function init() {
   Hand().render();
-  DragAndDrop().bind();
+  Shop().render();
 }
 
 document.addEventListener("DOMContentLoaded", init);

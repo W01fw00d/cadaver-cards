@@ -5,42 +5,51 @@ body {
 
 .flex-box {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
-.main-container {
-  height: 100vh;
+.body-container {
+  justify-content: space-between;
 }
 
-.flex-box.main-container {
+.writer-container {
+  justify-content: space-between;
+}
+
+.writer {
+  color: white;
+}
+
+.match-container {
+  height: 100vh;
+  flex-grow: 4;
+}
+
+.flex-box.writer-container,
+.flex-box.match-container,
+.flex-box.shop {
   flex-direction: column;
 }
 
-.field {
-  padding: 10px;
-  margin-top: 150px;
-}
-
-.hand {
-  margin-top: 60px;
-}
-
 .card {
-  margin: 10px;
+  margin: 3px;
 }
 
 .card.slot {
   background-color: grey;
-  width: 120px;
-  height: 170px;
+  width: 100px;
+  height: 150px;
 }
 
 .card.playable {
   background-color: brown;
   width: 100px;
   height: 150px;
+}
 
+.player .card.playable,
+.shop .card {
   cursor: pointer;
 }
 
@@ -66,4 +75,12 @@ body {
 
 .card .title {
   text-align: center;
+}
+
+.flex-box.turn-button-container {
+  align-items: flex-end;
+}
+
+.turn-button {
+  height: 20px;
 }
