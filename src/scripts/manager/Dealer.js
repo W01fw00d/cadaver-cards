@@ -1,9 +1,6 @@
 import CardTemplate from "../template/Card.js";
-// import ArrayUtils from "../utils/Array.js";
 
 export default (players) => {
-  // const arrayUtils = ArrayUtils();
-
   const deal = (playerId, nCards) => {
     const player = players[playerId];
 
@@ -11,10 +8,9 @@ export default (players) => {
       var parser = new DOMParser();
 
       player.deck
-        .filter((_, index) => index < nCards) // Select only first N Cards
+        .splice(0, nCards) // Select only first N Cards
         .forEach((card, index) => {
           player.hand.push(card);
-          player.deck.splice(index, 1);
 
           var doc = parser.parseFromString(
             CardTemplate(card, index),
